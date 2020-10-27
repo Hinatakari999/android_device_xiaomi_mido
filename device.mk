@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     camera.msm8953 \
     libmm-qcamera \
+    libui_shim \
     Snap
 
 # Consumerir
@@ -177,12 +178,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_mido \
     libunwind
 
-# FM
-PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
-
 # Fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect
@@ -216,7 +211,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
-    libui_shim
+    libvt_shim
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -370,10 +365,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi_mido
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
@@ -415,3 +406,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# AdvancedControls
+PRODUCT_PACKAGES += \
+    AdvancedControls \
